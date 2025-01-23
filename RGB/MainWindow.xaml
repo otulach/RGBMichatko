@@ -1,0 +1,23 @@
+﻿<Window x:Class="RGB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="RGB Míchátko&#xD;&#xA;" HorizontalAlignment="Left" Margin="323,46,0,0" VerticalAlignment="Top" Height="34" Width="124" RenderTransformOrigin="-0.258,-0.232" FontSize="18"/>
+        <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Height="291" Margin="56,46,0,0" Stroke="Black" VerticalAlignment="Top" Width="241"/>
+        <Slider x:Name="redSlider" HorizontalAlignment="Left" Margin="323,132,0,0" VerticalAlignment="Top" Width="272" Height="39" ValueChanged="colorChanged" Maximum="255"/>
+        <Slider x:Name="blueSlider" HorizontalAlignment="Left" Margin="323,0,0,0" VerticalAlignment="Center" Width="272" Height="46" ValueChanged="colorChanged" Maximum="255"/>
+        <Slider x:Name="greenSlider" HorizontalAlignment="Left" Margin="323,260,0,0" VerticalAlignment="Top" Width="272" Height="37" ValueChanged="colorChanged" Maximum="255"/>
+        <Label Content="BLUE" HorizontalAlignment="Left" Margin="327,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.659,-0.439" FontSize="16" Background="#FF224EFF" Width="58"/>
+        <Label Content="GREEN" HorizontalAlignment="Left" Margin="327,224,0,0" VerticalAlignment="Top" FontSize="16" Background="#FF20B344"/>
+        <Label Content="RED" HorizontalAlignment="Left" Margin="327,96,0,0" VerticalAlignment="Top" FontSize="16" Background="#FFCA2C2C" Width="59"/>
+        <TextBox x:Name="redT" HorizontalAlignment="Left" Margin="391,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" TextChanged="textChanged" Height="17"/>
+        <TextBox x:Name="blueT" HorizontalAlignment="Left" Margin="391,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" TextChanged="textChanged"/>
+        <TextBox x:Name="greenT" HorizontalAlignment="Left" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" TextChanged="textChanged"/>
+
+    </Grid>
+</Window>
